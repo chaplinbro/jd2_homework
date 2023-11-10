@@ -16,9 +16,9 @@ public interface Dao {
 
     ArrayList<Expense> getExpenses();
 
-    boolean deleteExpense(String id);
+    boolean deleteExpense(int num);
 
-    boolean deleteReceiver(String id);
+    boolean deleteReceiver(int num);
 
     Receiver getReceiver(int num);
 

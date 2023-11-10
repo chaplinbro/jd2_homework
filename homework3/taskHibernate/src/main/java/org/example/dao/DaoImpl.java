@@ -73,14 +73,14 @@ public class DaoImpl implements Dao {
     }
 
     @Override
-    public boolean deleteReceiver(String id) {
+    public boolean deleteReceiver(int num) {
         Session session = null;
         Transaction transaction = null;
         Receiver receiver;
         try {
             session = sessionFactory.openSession();
             transaction = session.beginTransaction();
-            receiver = session.get(Receiver.class, id);
+            receiver = session.get(Receiver.class, num);
             if (receiver == null) {
                 return false;
             }
@@ -96,14 +96,14 @@ public class DaoImpl implements Dao {
     }
 
     @Override
-    public boolean deleteExpense(String id) {
+    public boolean deleteExpense(int num) {
         Session session = null;
         Transaction transaction = null;
         Expense expense;
         try {
             session = sessionFactory.openSession();
             transaction = session.beginTransaction();
-            expense = session.get(Expense.class, id);
+            expense = session.get(Expense.class, num);
             if (expense == null) {
                 return false;
             }
