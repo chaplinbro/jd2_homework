@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+
+    <changeSet id="1" author="Nikitos">
+        <sql>
+            CREATE TABLE expenses (
+            num int,
+            paydate date,
+            receiver int,
+            value dec(10,2) );
+        </sql>
+    </changeSet>
+
+    <changeSet id="2" author="Nikitos">
+        <sql>
+            CREATE TABLE receivers (
+            num int,
+            name varchar(255) );
+        </sql>
+    </changeSet>
+
+    <changeSet id="3" author="Nikitos">
+        <sql>
+            INSERT INTO expenses (num, paydate, value, receiver)
+            VALUES (1, '2011-5-10', 78.89, 2);
+            INSERT INTO expenses (num, paydate, value, receiver)
+            VALUES (2, '2011-4-23', 342.23, 1);
+            INSERT INTO expenses (num, paydate, value, receiver)
+            VALUES (3, '2012-11-06', 21.32, 3);
+            INSERT INTO expenses (num, paydate, value, receiver)
+            VALUES (4, '2012-1-30', 543.34, 4);
+        </sql>
+    </changeSet>
+
+    <changeSet id="4" author="Nikitos">
+        <sql>
+            INSERT INTO receivers (num, name)
+            VALUES (1, 'Интернет-провайдер "Соло"');
+            INSERT INTO receivers (num, name)
+            VALUES (2, 'Гипермаркет "Корона"');
+            INSERT INTO receivers (num, name)
+            VALUES (3, 'МТС');
+            INSERT INTO receivers (num, name)
+            VALUES (4, 'Гипермаркет "Виталюр"');
+        </sql>
+    </changeSet>
+</databaseChangeLog>
