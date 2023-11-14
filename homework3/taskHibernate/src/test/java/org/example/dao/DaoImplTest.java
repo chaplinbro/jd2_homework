@@ -1,67 +1,99 @@
 package org.example.dao;
 
+import junit.framework.TestCase;
+import org.example.dao.data.TestConfig;
 import org.example.dao.data.TestSessionFactory;
-import org.example.pojo.Expense;
-import org.example.pojo.Receiver;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.example.pojo.Person;
+import org.junit.*;
 
-import java.util.ArrayList;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-import static org.junit.Assert.*;
-
-public class DaoImplTest {
+public class DaoImplTest extends TestCase {
 
     private static Dao dao;
 
     @Before
     public void setUp() throws Exception {
         dao = new DaoImpl(TestSessionFactory.getSessionFactory());
-        Session session = TestSessionFactory.getSessionFactory().openSession();
-        session.beginTransaction();
-//        session.createSQLQuery("TRUNCATE TABLE expense;").executeUpdate();
-//        session.createSQLQuery("TRUNCATE TABLE receiver;").executeUpdate();
-        session.getTransaction().commit();
+        Connection conn = TestConfig.connection();
+        conn.createStatement().executeUpdate("DELETE FROM T_PERSON");
     }
 
     @After
     public void tearDown() throws Exception {
-        Session session = TestSessionFactory.getSessionFactory().openSession();
-        session.beginTransaction();
-//        session.createSQLQuery("TRUNCATE TABLE expense;").executeUpdate();
-//        session.createSQLQuery("TRUNCATE TABLE receiver;").executeUpdate();
-        session.getTransaction().commit();
         dao = null;
+        Connection conn = TestConfig.connection();
+//        conn.createStatement().executeUpdate("DELETE FROM T_PERSON");
     }
 
     @Test
-    public void testSaveReceiver() {
+    public void testSavePerson() throws SQLException, ClassNotFoundException {
+
         //Given
-        Receiver receiver = new Receiver(1, "jaha");
+        Person person = new Person(null, "Jaha", "Tamoa", 5559789);
+        //when
+        Long testPerson = dao.savePerson(person);
+        //then
+        assertNotNull(testPerson);
+        Connection conn = TestConfig.connection();
+        ResultSet rs = conn.createStatement().executeQuery(
+                "select count(*) from T_PERSON where name = 'Jaha'");
+        rs.next();
+        long actualId = rs.getLong(1);
+        Assert.assertEquals(1, actualId);
 
-        // When
-        int savedId = dao.saveReceiver(receiver);
-
-        // Then
-        assertNotNull(savedId);
-        assertEquals(receiver.getNum(), savedId);
-        assertEquals("jaha", receiver.getName());
     }
 
     @Test
-    public void testSaveExpense() {
+    public void testDeletePerson() throws SQLException, ClassNotFoundException {
         //Given
-        Expense expense = new Expense(1, "10-10-1010", 1, 32);
+        Connection conn = TestConfig.connection();
+        long testId = 1;
+        conn.createStatement().executeUpdate(
+                "insert into T_PERSON values ('" + testId + "', 'Tarik', '5556677', 'Delete')");
+        //When
+        boolean del = dao.deletePerson(testId);
+        //Then
+        assertTrue(del);
+        ResultSet rs = conn.createStatement().executeQuery(
+                "select count(*) from T_PERSON where id = '" + testId + "';");
+        rs.next();
+        long actualId = rs.getLong(1);
+        assertEquals(0, actualId);
+        conn.close();
+    }
 
-        // When
-        int savedId = dao.saveExpense(expense);
+    @Test
+    public void testFindPerson() throws SQLException, ClassNotFoundException {
+        //Given
+        Connection conn = TestConfig.connection();
+        long testId = 12;
+        conn.createStatement().executeUpdate(
+                "insert into T_PERSON values ('11', 'Pasha', 5225232, 'Finder')," +
+                        " ('12', 'Gosha', 5322332, 'Finder')," +
+                        " ('13', 'Dasha', 8979898, 'Finder');"
+        );
+        //when
+        Person person = dao.findPerson(testId);
+        //then
+        assertNotNull(person);
+        assertNotNull(String.valueOf(testId), person.getId());
+        assertEquals("Gosha", person.getName());
+        assertEquals("Finder", person.getSurname());
+        assertEquals(5322332, person.getNumber());
+    }
 
-        // Then
-        assertNotNull(savedId);
-        assertEquals(expense.getNum(), savedId);
-        assertEquals(expense.getReceiver(), 1);
+    @Test
+    public void testGetPerson() {
+    }
+
+    @Test
+    public void testLoadPerson() {
+    }
+
+    @Test
+    public void testUpdatePerson() {
     }
 }

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fea7f9b8-af2a-4ad2-9720-648799dc0b76" name="Changes" comment="" />
+    <list default="true" id="fea7f9b8-af2a-4ad2-9720-648799dc0b76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/DaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/pojo/Expense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/pojo/Receiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/java/org/example/dao/DaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/java/org/example/dao/DaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/resources/test.hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/resources/test.hibernate.cfg.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,21 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/homework/homework2.4-2.7/DatabaseHomework/pom.xml",
-    "onboarding.tips.debug.path": "C:/homework/homework2.4-2.7/DatabaseHomework/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/homework/homework2.4-2.7/DatabaseHomework/pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/homework/homework2.4-2.7/DatabaseHomework/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

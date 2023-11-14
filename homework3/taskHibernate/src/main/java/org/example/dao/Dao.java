@@ -1,32 +1,22 @@
 package org.example.dao;
 
-import org.example.pojo.Expense;
-import org.example.pojo.Receiver;
+import org.example.pojo.Person;
 
-import java.util.ArrayList;
 
 public interface Dao {
 
+    Long savePerson (Person person);
 
-    int saveReceiver(Receiver receiver);
+    boolean deletePerson (Long id);
 
-    int saveExpense(Expense expense);
+    Person findPerson (Long id);
 
-    ArrayList<Receiver> getReceiver();
+    Person getPerson(Long id);
 
-    ArrayList<Expense> getExpenses();
+    Person loadPerson (Long id);
 
-    boolean deleteExpense(int num);
+    Person updatePerson (Long id, String name, String surname, int number);
 
-    boolean deleteReceiver(int num);
-
-    Receiver getReceiver(int num);
-
-    Expense getExpense(int num);
-
-    Receiver loadReceiver(int num);
-
-    void flush(Receiver receiver);
 
 
 }

@@ -17,7 +17,7 @@ public class Config {
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/hibernate_db", "user", "user");
     }
 
-    public static Connection Connection() throws ClassNotFoundException, SQLException {
+    public static Connection connection() throws ClassNotFoundException, SQLException {
         if (config == null) {
             config = new Config();
         }
