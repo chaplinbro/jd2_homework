@@ -1,15 +1,18 @@
 package org.example;
 
+import org.example.dao.Dao;
 import org.example.dao.DaoImpl;
 import org.hibernate.SessionFactory;
 
 public class Main {
-
-
     public static void main(String[] args) {
 
-        SessionFactory sessionFactory = SessionFactoryClass.getSessionFactory();
-        DaoImpl dao = new DaoImpl(sessionFactory);
+        DaoImpl dao = new DaoImpl(SessionFactoryClass.getSessionFactory());
 
+        try {
+            dao.start();
+        } catch (Exception e) {
+            System.out.println("U failed..." + e.getMessage());
+        }
     }
 }

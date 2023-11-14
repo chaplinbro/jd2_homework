@@ -75,4 +75,14 @@ public class Person {
     public int hashCode() {
         return Objects.hash(id, name, surname, number);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", number=" + number +
+                '}';
+    }
 }

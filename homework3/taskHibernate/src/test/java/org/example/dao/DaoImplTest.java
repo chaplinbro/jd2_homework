@@ -127,7 +127,7 @@ public class DaoImplTest extends TestCase {
     }
 
     @Test
-    public void testUpdatePerson() {
+    public void testUpdatePerson() throws SQLException, ClassNotFoundException {
 
     }
 }

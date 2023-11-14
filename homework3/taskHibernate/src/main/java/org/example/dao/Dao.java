@@ -15,8 +15,6 @@ public interface Dao {
 
     Person loadPerson (Long id);
 
-    Person updatePerson (Long id, String name, String surname, int number);
-
-
+    void updatePerson (Person person);
 
 }
