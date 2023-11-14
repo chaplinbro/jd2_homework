@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 public class DaoImplTest extends TestCase {
 
     private static Dao dao;
@@ -43,7 +44,7 @@ public class DaoImplTest extends TestCase {
         rs.next();
         long actualId = rs.getLong(1);
         Assert.assertEquals(1, actualId);
-
+        conn.close();
     }
 
     @Test
@@ -52,7 +53,7 @@ public class DaoImplTest extends TestCase {
         Connection conn = TestConfig.connection();
         long testId = 1;
         conn.createStatement().executeUpdate(
-                "insert into T_PERSON values ('" + testId + "', 'Tarik', '5556677', 'Delete')");
+                "insert into T_PERSON values ('" + testId + "', 'Tarik', '5556677', 'Mr.Delete')");
         //When
         boolean del = dao.deletePerson(testId);
         //Then
@@ -79,21 +80,54 @@ public class DaoImplTest extends TestCase {
         Person person = dao.findPerson(testId);
         //then
         assertNotNull(person);
-        assertNotNull(String.valueOf(testId), person.getId());
         assertEquals("Gosha", person.getName());
         assertEquals("Finder", person.getSurname());
         assertEquals(5322332, person.getNumber());
+        conn.close();
     }
 
     @Test
-    public void testGetPerson() {
+    public void testGetPerson() throws SQLException, ClassNotFoundException {
+        //Given
+        Connection conn = TestConfig.connection();
+        long testId = 21;
+        conn.createStatement().executeUpdate(
+                "insert into T_PERSON values ('" + testId + "', 'Tarik', '5556677', 'Mr.Get')");
+
+        //when
+        Person person = dao.getPerson(testId);
+        //then
+        assertNotNull(person);
+        assertEquals("Tarik", person.getName());
+        assertEquals(5556677, person.getNumber());
+        assertEquals("Mr.Get", person.getSurname());
+        conn.close();
     }
 
     @Test
-    public void testLoadPerson() {
+    public void testLoadPerson() throws SQLException, ClassNotFoundException {
+        //Given
+        long personId = prepareTestDataForLoad();
+        //when
+        Person loadPerson = dao.loadPerson(personId);
+        //then
+        Connection conn = TestConfig.connection();
+        conn.createStatement().executeQuery(
+                "select * from T_PERSON where id = '" + personId + "';"
+        );
+        assertNotNull(loadPerson);
+        conn.close();
+    }
+
+    public Long prepareTestDataForLoad() {
+        long testId = 33;
+        Person person = new Person(testId, "Clark", "Kent", 4336655);
+        dao.savePerson(person);
+        return person.getId();
     }
 
     @Test
     public void testUpdatePerson() {
+
     }
 }
