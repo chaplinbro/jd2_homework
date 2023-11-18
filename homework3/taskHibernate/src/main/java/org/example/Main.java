@@ -1,8 +1,6 @@
 package org.example;
 
-import org.example.dao.Dao;
 import org.example.dao.DaoImpl;
-import org.hibernate.SessionFactory;
 
 public class Main {
     public static void main(String[] args) {
