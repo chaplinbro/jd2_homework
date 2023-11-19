@@ -14,6 +14,16 @@
         <mapping class="org.example.pojo.Employer"/>
         <mapping class="org.example.pojo.Worker"/>
         <mapping class="org.example.pojo.Manager"/>
+        <mapping class="org.example.pojoPerClass.Teacher"/>
+        <mapping class="org.example.pojoPerClass.Chemist"/>
+        <mapping class="org.example.pojoPerClass.Biologist"/>
+        <mapping class="org.example.pojoSingle.User"/>
+        <mapping class="org.example.pojoSingle.Pro"/>
+        <mapping class="org.example.pojoSingle.Noob"/>
+        <mapping class="org.example.pojoJoined.Person"/>
+        <mapping class="org.example.pojoJoined.Employee"/>
+        <mapping class="org.example.pojoJoined.Student"/>
+
 
     </session-factory>
 
