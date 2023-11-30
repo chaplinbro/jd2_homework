@@ -1,10 +1,7 @@
 package org.example;
 
 
-import org.example.dao.EmployerDao;
-import org.example.dao.ManagerDao;
-import org.example.dao.WorkerDao;
-import org.example.dao.HierarchyDao;
+import org.example.dao.*;
 import org.example.pojoJoined.Employee;
 import org.example.pojoJoined.Person;
 import org.example.pojoJoined.Student;
@@ -21,6 +18,7 @@ public class Main {
         ManagerDao managerDao = new ManagerDao(SessionFactoryClass.getSessionFactory());
         WorkerDao workerDao = new WorkerDao(SessionFactoryClass.getSessionFactory());
         HierarchyDao hierarchyDao = new HierarchyDao(SessionFactoryClass.getSessionFactory());
+        RelationshipDao relationshipDao = new RelationshipDao(SessionFactoryClass.getSessionFactory());
 
         employerDao.createNewEmployer();
         managerDao.joinManager();
@@ -36,6 +34,13 @@ public class Main {
         hierarchyDao.saveObject(new Person(0,"Person", "Bro"));
         hierarchyDao.saveObject(new Student(0,"Student", "Bro", "Epam", 90000));
         hierarchyDao.saveObject(new Employee(0,"Employee", "Bro", "Math", 10));
+
+        // не обязательное
+        //OneToOne
+        relationshipDao.saveCarWithCarDetail();
+        //ManyToMany
+        relationshipDao.saveParkingWithCars();
+
 
     }
 }

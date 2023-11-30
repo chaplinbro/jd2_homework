@@ -24,6 +24,10 @@
         <mapping class="org.example.pojoJoined.Employee"/>
         <mapping class="org.example.pojoJoined.Student"/>
 
+        <mapping class="org.example.pojoRelationship.Car"/>
+        <mapping class="org.example.pojoRelationship.CarDetail"/>
+        <mapping class="org.example.pojoRelationship.Parking"/>
+
 
     </session-factory>
 
