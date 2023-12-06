@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <bean id="personBean"
+          class="org.example.Person"
+          factory-method="getPerson">
+        <property name="name" value="Nikita"/>
+        <property name="surname" value="Sladkiy"/>
+        <property name="address" ref="addressBean"/>
+    </bean>
+
+    <bean id="addressBean"
+          class="org.example.Address">
+        <property name="address" value="Maliby"/>
+    </bean>
+</beans>
