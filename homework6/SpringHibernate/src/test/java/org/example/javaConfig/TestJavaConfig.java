@@ -2,6 +2,6 @@ package org.example.javaConfig;
 
 import org.springframework.context.annotation.Import;
 
-@Import(ConfigBeans.class)
-public class TestConfigBeans {
+@Import(JavaConfig.class)
+public class TestJavaConfig {
 }

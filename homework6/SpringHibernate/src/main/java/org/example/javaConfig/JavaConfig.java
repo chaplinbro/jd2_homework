@@ -22,7 +22,7 @@ import java.util.Properties;
 @ComponentScan(basePackages = "org.example")
 @PropertySource(value = {"classpath:application.properties"})
 @EnableTransactionManagement
-public class ConfigBeans {
+public class JavaConfig {
 
     @Bean
     public Properties hibernateProperties(

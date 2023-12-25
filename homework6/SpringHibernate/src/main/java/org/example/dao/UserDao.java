@@ -1,4 +1,4 @@
-package org.example.javaConfig;
+package org.example.dao;
 
 import jakarta.transaction.Transactional;
 import org.example.entity.User;
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Transactional
-public class ConfigBeansImport {
+public class UserDao {
 
     private final SessionFactory sessionFactory;
 
     @Autowired
-    public ConfigBeansImport(SessionFactory sessionFactory) {
+    public UserDao(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 

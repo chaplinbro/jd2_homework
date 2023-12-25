@@ -1,5 +1,6 @@
 package org.example.javaConfig;
 
+import org.example.dao.UserDao;
 import org.example.entity.User;
 import org.junit.After;
 import org.junit.Before;
@@ -20,12 +21,12 @@ import static org.junit.Assert.assertNotNull;
 
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = TestConfigBeans.class)
+@ContextConfiguration(classes = TestJavaConfig.class)
 @TestPropertySource(value = "classpath:test.application.properties")
-public class ConfigBeansImportTest {
+public class UserDaoTest {
 
     @Autowired
-    ConfigBeansImport configBeansImport;
+    UserDao userDao;
     @Autowired
     DataSource dataSource;
 
@@ -48,7 +49,7 @@ public class ConfigBeansImportTest {
     public void testSaveUser() throws SQLException, ClassNotFoundException {
         User user = new User(111L, "testSave", 12);
 
-        configBeansImport.saveUser(user);
+        userDao.saveUser(user);
 
         ResultSet rs = conn.createStatement().executeQuery(
                 "select count(*) from user where name = 'testSave'");
@@ -63,7 +64,7 @@ public class ConfigBeansImportTest {
         conn.createStatement().executeUpdate(
                 "insert into user (id, age, name) values ('" + testId + "', '34', 'testGet')");
 
-        User user = configBeansImport.getUser(testId);
+        User user = userDao.getUser(testId);
 
         assertNotNull(user);
         assertEquals("testGet", user.getName());
@@ -75,7 +76,7 @@ public class ConfigBeansImportTest {
         conn.createStatement().executeUpdate(
                 "insert into user (id, age, name) values ('" + testId + "', '23', 'testDelete')");
 
-        configBeansImport.deleteUser(testId);
+        userDao.deleteUser(testId);
 
         ResultSet rs = conn.createStatement().executeQuery(
                 "select count(*) from user where id = '" + testId + "';");
