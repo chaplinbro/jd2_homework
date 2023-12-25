@@ -5,61 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f46bfb2d-0f02-4042-a061-9242c13f26a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/by/it_academy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/java/by/it_academy/CountServletTask12.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/java/by/it_academy/CountServletTask9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/java/by/it_academy/FirstServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/java/by/it_academy/UserDataServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/java/by/it_academy/WhichBrowser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/main/webapp/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/DAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/ExpenseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/java/org/example/ReceiverDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/resources/changelog-master.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework2/DatabaseHomework/src/main/resources/liquibase.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/artifacts/taskHibernate_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/SessionFactoryClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/dao/DaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/java/org/example/pojo/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/changelog-master.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/main/resources/liquibase.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/java/org/example/dao/DaoImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/java/org/example/dao/data/TestConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/java/org/example/dao/data/TestSessionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../homework3/taskHibernate/src/test/resources/test.hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework2/Database/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework2/Database/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigBeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigBeansImport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigWithXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/UserServiceWithBoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/ConfigBeansImportTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/ConfigWithXMLTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/data/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/data/TestSessionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/resources/test.hibernate.cfg.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/homework/homework1/Servlet/pom.xml",
-    "onboarding.tips.debug.path": "C:/homework/homework1.8-1.12/data/src/main/java/by/it_academy/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/homework/homework1/Servlet/pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/homework/homework1.8-1.12/data/src/main/java/by/it_academy/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">

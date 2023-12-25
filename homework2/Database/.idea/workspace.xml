@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fea7f9b8-af2a-4ad2-9720-648799dc0b76" name="Changes" comment="" />
+    <list default="true" id="fea7f9b8-af2a-4ad2-9720-648799dc0b76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../homework1/Servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../homework1/Servlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigBeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigBeansImport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/ConfigWithXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/boot/UserServiceWithBoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/java/org/example/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/main/resources/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/ConfigBeansImportTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/ConfigWithXMLTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/data/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/java/org/example/data/TestSessionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../homework6/SpringHiibernate/src/test/resources/test.hibernate.cfg.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/homework/homework2/Database/pom.xml",
-    "onboarding.tips.debug.path": "C:/homework/homework2.4-2.7/DatabaseHomework/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/homework/homework2/Database/pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/homework/homework2.4-2.7/DatabaseHomework/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
